@@ -10,7 +10,6 @@ This project is an AI-powered lesson planner built using **React.js (Vite)**, **
 - [Tech Stack](#tech-stack)
 - [Installation & Setup](#installation--setup)
 - [How to Use](#how-to-use)
-- [Project Structure](#project-structure)
 - [API Integration](#api-integration-google-gemini)
 - [License](#license)
 
@@ -49,8 +48,8 @@ This project is an AI-powered lesson planner built using **React.js (Vite)**, **
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-repo-link/ai-powered-lesson-planner.git
-cd ai-powered-lesson-planner
+git clone https://github.com/KanchanKR/Planner-AI.git
+cd Planner-AI
 ```
 
 ## 2. Install dependencies
@@ -68,21 +67,21 @@ npm run dev
 ## 📋 How to Use
 
 **Login:**
--Open the application and log in using the demo credentials:
--Email: demouser
--Password: demopass
+- Open the application and log in using the demo credentials:
+- Email: demouser
+- Password: demopass
 
 **Enter Lesson Details:**
--Fill in the details for the lesson plan (Topic, Grade Level, etc.).
+- Fill in the details for the lesson plan (Topic, Grade Level, etc.).
 
 **Generate Lesson Plan:**
--Click on the "Generate Lesson Plan" button to fetch AI-generated content from the Google Gemini API.
+- Click on the "Generate Lesson Plan" button to fetch AI-generated content from the Google Gemini API.
 
 **Edit & Format:**
--Use the editor to manually adjust the lesson content. You can make modifications using text fields, accordions, and drag-and-drop features.
+- Use the editor to manually adjust the lesson content. You can make modifications using text fields, accordions, and drag-and-drop features.
 
 **Download as PDF:**
--Once satisfied with the lesson plan, click "Download as PDF" to save the lesson plan to your device.
+- Once satisfied with the lesson plan, click "Download as PDF" to save the lesson plan to your device.
 
 **Dark Mode:**
 -Use the dark mode toggle to switch between light and dark themes.
@@ -90,9 +89,9 @@ npm run dev
 ## 🌐 API Integration (Google Gemini)
 The Google Gemini API is used to dynamically generate lesson content based on the input provided by the user. The API fetches:
 
--Detailed lesson content.
--Suggested classroom activities.
--Assessment questions.
+- Detailed lesson content.
+- Suggested classroom activities.
+- Assessment questions.
 
 API requests are handled using React's fetch function with proper error handling to ensure robustness.
 

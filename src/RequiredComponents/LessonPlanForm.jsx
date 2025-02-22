@@ -6,7 +6,8 @@ import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { GoogleGenerativeAI } from '@google/generative-ai';
 
-const genAI = new GoogleGenerativeAI('AIzaSyCRHclHdyMDpKOPRyW7_4dFyYs50DdenDM'); // Replace with your API key
+const genAI = new GoogleGenerativeAI(import.meta.env.VITE_GOOGLE_AI_KEY);
+// Replace with your API key
 
 const LessonPlanForm = ({ onGenerate, onLessonPlanGenerated }) => {
   const [topic, setTopic] = useState('');
@@ -17,6 +18,9 @@ const LessonPlanForm = ({ onGenerate, onLessonPlanGenerated }) => {
   const [objectives, setObjectives] = useState('');
   const [outline, setOutline] = useState('');
   const [loading, setLoading] = useState(false);
+
+  // console.log('API Key:', import.meta.env.VITE_GOOGLE_AI_KEY);
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
